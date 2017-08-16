@@ -995,12 +995,22 @@
    <script src="js/main.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/jquery.lazyload.js" type="text/javascript"></script>
-    <script type="text/javascript" charset="utf-8">
-  $(function() {
-     $(".img-responsive").lazyload();
-  });
-  </script>
+    <script type='text/javascript'>
+        
+    $(document).ready(function() {
+        
+      $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js',function(){
+
+$('.img-responsive').lazyload({
+
+});
+  
+  
+});
+        
+        });
+        
+        </script>
 
 </body>
 
